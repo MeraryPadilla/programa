@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa - FashionStyle</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #e91e63;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .banner {
+            background-image: url('https://i.imgur.com/YZ9lB61.jpg');
+            background-size: cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            width: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px #aaa;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <h1>FashionStyle</h1>
+        <p>Tu tienda de ropa favorita</p>
+    </header>
+
+    <!-- MENÚ -->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Hombres</a>
+        <a href="#">Mujeres</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <!-- BANNER -->
+    <div class="banner">
+        ¡Nueva colección 2025!
+    </div>
+
+    <!-- PRODUCTOS -->
+    <section class="productos">
+        <!-- Producto 1 -->
+        <div class="card">
+            <img src="https://i.imgur.com/2cYQZ3p.jpeg" alt="Camisa">
+            <h3>Camisa Casual</h3>
+            <p>$299 MXN</p>
+            <button onclick="agregar()">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="card">
+            <img src="https://i.imgur.com/ZxEfJXS.jpeg" alt="Pantalón">
+            <h3>Pantalón de Mezclilla</h3>
+            <p>$499 MXN</p>
+            <button onclick="agregar()">Agregar al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="card">
+            <img src="https://i.imgur.com/ep2lXoa.jpeg" alt="Blusa">
+            <h3>Blusa Elegante</h3>
+            <p>$259 MXN</p>
+            <button onclick="agregar()">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        © 2025 FashionStyle | Todos los derechos reservados
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function agregar() {
+            alert("Producto agregado al carrito 🛍️");
+        }
+    </script>
+
+</body>
+</html>
